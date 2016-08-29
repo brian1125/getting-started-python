@@ -103,7 +103,7 @@ gcloud compute backend-services create $SERVICE \
 # [START add_backend_service]
 gcloud compute backend-services add-backend $SERVICE \
   --instance-group $GROUP \
-  --instance-zone $ZONE
+  --instance-group-zone $ZONE
 # [END add_backend_service]
 
 # Create a URL map and web Proxy. The URL map will send all requests to the
